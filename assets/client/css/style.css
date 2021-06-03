@@ -1,0 +1,712 @@
+*
+{
+    padding: 0px;
+    margin: 0px;
+}
+body
+{
+    position: static;
+    font-family: poppins;
+}
+p
+{
+    font-size: 0.9rem;
+}
+
+/* RATING */
+.rating {
+  display: inline-block;
+  position: relative;
+  height: 50px;
+  line-height: 50px;
+  font-size: 50px;
+}
+
+.rating label {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  cursor: pointer;
+}
+
+.rating label:last-child {
+  position: static;
+}
+
+.rating label:nth-child(1) {
+  z-index: 5;
+}
+
+.rating label:nth-child(2) {
+  z-index: 4;
+}
+
+.rating label:nth-child(3) {
+  z-index: 3;
+}
+
+.rating label:nth-child(4) {
+  z-index: 2;
+}
+
+.rating label:nth-child(5) {
+  z-index: 1;
+}
+
+.rating label input {
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 0;
+}
+
+.rating label .icon {
+  float: left;
+  color: transparent;
+}
+
+.rating label:last-child .icon {
+  color: #000;
+}
+
+.rating:not(:hover) label input:checked ~ .icon,
+.rating:hover label:hover input ~ .icon {
+  color: #ff3f00;
+}
+
+.rating label input:focus:not(:checked) ~ .icon:last-child {
+  color: #000;
+  text-shadow: 0 0 5px #09f;
+}
+/* END RATING */
+
+#footer
+{
+    background-color: #3e0000;
+}
+#footer ul li
+{
+    list-style: none;
+}
+#footer, #footer ul li a
+{
+    color: white; 
+}
+#footer h2
+{
+    font-size: 20px;
+}
+#footer ul li
+{
+    font-size: 13px;
+}
+#footer ul li a
+{
+    transition: all 0.2s ease-in;
+}
+#footer ul li a:hover
+{
+    letter-spacing: 0.3px;
+    text-decoration: none;
+}
+#footer #copyright
+{
+    font-size: 12px;
+}
+@media only screen and (max-device-width: 480px) {
+    #footer{
+        padding-bottom: 50px;
+    }
+}
+/* header */
+/* NAV */
+body>div>#header
+{
+    background: #f1f1f1;
+    box-shadow: 5px 5px 10px #7d7d7d;
+}
+body>div>#header nav ul li a
+{
+    color: #8B0707;
+    font-weight: bold;
+    font-family: Calibri;
+    transition: all 0.3s ease;
+}
+.garis-kanan
+{
+    border-right: 1px solid grey;
+}
+/* END NAV */
+
+body>div>#header #logo #text h1
+{
+    font-size: 15px;
+    font-weight: bold;
+}
+body>div>#header #logo #text hr
+{
+    border: 2px solid black;
+}
+body>div>#header #nav
+{
+    text-align: right;
+}
+@media only screen and (min-width: 769px) {
+    
+    #headerMobile
+    {
+        display: none;
+
+    }
+    body>div>#header nav #iconNav
+    {
+        display: none;
+    }
+    body>div>#header nav ul li a span {
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    transition: 0.5s;
+    }
+
+    body>div>#header nav ul li a span:after {
+    content: '»';
+    position: absolute;
+    opacity: 0;
+    top: 0;
+    right: -20px;
+    transition: 0.5s;
+    }
+
+    body>div>#header nav ul li a:hover span {
+    padding-right: 25px;
+    }
+
+    body>div>#header nav ul li a:hover span:after {
+    opacity: 1;
+    right: 0;
+    }
+    
+    .garis-kanan
+    {
+        border-right: 0px solid grey;
+    }
+}
+@media only screen and (max-device-width: 480px) {
+    body>div>#header nav
+    {
+        display: none;
+    }
+    #headerMobile nav
+    {
+        position: fixed;
+        left: 0;
+        bottom: 0;
+        width: 100%;
+        background-color: #f1f1f1;
+        box-shadow: 5px 5px 10px #7d7d7d;
+        color: red;
+        text-align: center;
+    }
+    #headerMobile nav ul
+    {
+        width: 100%
+    }
+    #headerMobile nav ul li
+    {
+        width: 20%;
+    }
+    #headerMobile nav ul li a
+    {
+        color: rgb(144, 0, 0);
+        text-align: center;
+        font-size: 12px;
+        font-weight: bold;
+    }
+    
+    .garis-kanan
+    {
+        border-right: 0px solid grey;
+    }
+}
+/* END header */
+
+/* home */
+
+.jssorl-009-spin img {
+    animation-name: jssorl-009-spin;
+    animation-duration: 1.6s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+#home #jssor_1 .jssor1_009_akhir
+{
+    cursor: default;
+    position: relative;
+    top: 0px;
+    left: 0px;
+    width: 980px;
+    height: 380px;
+    overflow: hidden;
+}
+
+@keyframes jssorl-009-spin {
+    from {
+        transform: rotate(0deg);
+    }
+
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+
+.jssora061 {display:block;position:absolute;cursor:pointer;}
+.jssora061 .a {fill:none;stroke:#fff;stroke-width:360;stroke-linecap:round;}
+.jssora061:hover {opacity:.8;}
+.jssora061.jssora061dn {opacity:.5;}
+.jssora061.jssora061ds {opacity:.3;pointer-events:none;}
+#home #header #text h1
+{
+    font-weight: bold;
+    font-family: 'Segoe UI';
+}
+#home #pengumuman h1
+{
+    font-family: Calibri;
+    font-weight: bold;
+    font-size: 20px;
+    color: #8B0707;
+}
+#home #pengumuman a
+{
+    color: black;
+    text-decoration: none;
+    transition: all 0.3s ease-in;
+}
+#home #pengumuman a:hover
+{
+    background-color: rgb(228, 228, 228);
+}
+#home #pengumuman div h2
+{
+    font-family: Calibri;
+    font-size: 25px;
+    font-weight: bold;
+}
+#home #pengumuman div img
+{
+    width: 208px;
+}
+#home #pengumuman div p
+{
+    height: 100px;
+    font-family: Calibri;
+    text-align: justify;
+    font-family: 12px;
+    overflow: hidden;
+}
+#home #wisata h1
+{
+    font-family: Calibri;
+    font-weight: bold;
+    font-size: 25px;
+    color: #8B0707;
+}
+#home #wisata a
+{
+    color: black;
+    text-decoration: none;
+    transition: all 0.3s ease-in;
+}
+#home #wisata a:hover img
+{
+    filter: grayscale(0%);
+}
+#home #wisata div h2
+{
+    font-family: Calibri;
+    font-size: 10px;
+    font-weight: bold;
+}
+#home #wisata div img
+{
+    height: 100px;
+    padding: 2px;
+    filter: grayscale(100%);
+    transition: all 0.3s ease-in;
+}
+#home #wisata div p
+{
+    height: 100px;
+    font-family: Calibri;
+    text-align: justify;
+    font-family: 10px;
+    overflow: hidden;
+}
+#home #berita h1
+{
+    font-family: Calibri;
+    font-weight: bold;
+    font-size: 25px;
+    color: #8B0707;
+}
+#home #berita #content
+{
+    color: black;
+    text-decoration: none;
+    transition: all 0.2s ease;
+}
+#home #berita a#content:hover
+{
+    background-color: rgb(197, 195, 195);
+}
+#home #berita #content p
+{
+    font-size: 12px;
+}
+#home #pengumuman p
+{
+    font-size: 15px;
+    overflow: hidden;
+    font-family: poppins;
+}
+
+@media only screen and (max-device-width: 480px) {
+    #home #pengumuman div a
+    {
+        color: black;
+        text-decoration: none;
+    }
+    #home #pengumuman div h2
+    {
+        font-size: 20px;
+    }
+    #home #pengumuman div img
+    {
+        width: 100px;
+    }
+    #home #pengumuman div p
+    {
+        height: 75px;
+        font-size: 12px;
+        overflow: hidden;
+    }
+    #home #wisata div img
+    {
+        filter: grayscale(0%)
+    } 
+}
+/* END HOME */
+
+/* WISATA */
+#wisata #title
+{
+    background-color: #ffffff;
+}
+#wisata #title h1
+{
+    font-family: 'Segoe UI';
+    color: #8B0707;
+}
+#wisata #header svg a path
+{
+    fill: green;
+    stroke-width: 3px;
+    stroke: white;  
+    transition: all 0.3s ease-in;  
+}
+#wisata #header svg a path.active
+{
+    fill: rgb(0, 231, 0);
+}
+#wisata #header svg a:hover path
+{
+    fill: rgb(0, 231, 0);
+}
+#wisata #header svg a
+{
+    text-decoration: none;
+    font-size: 2.4vh;
+    font-family: 'Segoe UI';
+    font-weight: 500;
+}
+#wisata #header svg a text
+{
+    fill: black;
+}
+#wisata #gallery h1
+{
+    font-family: Calibri;
+    font-weight: bold;
+    font-size: 30px;
+    color: #8B0707;
+}
+#wisata #gallery div img
+{
+    filter: grayscale(100%);
+    transition: all 0.3s ease-in;
+}
+#wisata #gallery div a:hover img
+{
+    filter: grayscale(0%);
+}
+
+#wisata #body .wisata a
+{
+    color: black;
+    text-decoration: none;
+    transition: all 0.3s ease-in;
+    border-bottom: 2px solid black;
+}
+#wisata #body .wisata a:hover
+{
+    background-color: rgb(228, 228, 228);
+}
+#wisata #body .wisata div p
+{
+    height: 100px;
+    font-family: Calibri;
+    text-align: justify;
+    font-family: 12px;
+    overflow: hidden;
+    color: black;
+}
+#wisata #body .wisata iframe
+{
+    width: 100% !important;
+    height: 100% !important;
+}
+#wisata #body .wisata #img
+{
+    max-height: 200px;
+    overflow: hidden;
+}
+#wisata #body .tab-content div.tab-pane ul
+{
+    background-color: #f7f7f7;
+}
+#wisata #body .tab-content .tab-pane>div a
+{
+    color: black;
+    text-decoration: none;
+    transition: all 0.3s ease-in;
+    border-bottom: 2px solid black;
+}
+#wisata #body .tab-content .tab-pane>div a:hover
+{
+    background-color: rgb(228, 228, 228);
+}
+#wisata #body .tab-content .tab-pane>div div p
+{
+    height: 100px;
+    font-family: Calibri;
+    text-align: justify;
+    font-family: 12px;
+    overflow: hidden;
+    color: black;
+}
+#wisata #body .tab-content .tab-pane>div iframe
+{
+    width: 100% !important;
+    height: 100% !important;
+}
+#wisata #body .tab-content .tab-pane>div #img
+{
+    height: 200px;
+    overflow: hidden;
+}
+#wisata #body>#pills-tab>li>a.nav-link
+{
+    color: #8B0707;
+}
+#wisata #body #pills-tab .active
+{
+    font-weight: bold;
+}
+#wisata #body #pills-wisata #pills-tab .active
+{
+    font-weight: bold;
+    background-color: #8B0707;
+}
+#wisata #parent .active {
+    background: linear-gradient(to bottom, #3cb0fd, #3498db);
+    text-decoration: none;
+}
+@media only screen and (max-device-width: 500px) {
+    #wisata #body .tab-content .tab-pane>div #img
+    {
+        height: 100px;
+    }
+    #wisata #title h1
+    {
+        font-size: 25px;
+    }
+    #wisata #gallery div a img
+    {
+        filter: grayscale(0%);
+    }
+    #wisata #body #pills-wisata a
+    {
+        background-color: rgb(247, 247, 247);
+    }
+    #wisata #body #pills-wisata a #maps
+    {
+        display: none;
+    }
+    #wisata #body #pills-penginapan a
+    {
+        background-color: rgb(247, 247, 247);
+    }
+    #wisata #body #pills-penginapan a #maps
+    {
+        display: none;
+    }
+}x
+/* END WISATA */
+
+/* GALERY */
+
+#galery #title h1
+{
+    font-family: 'Segoe UI';
+    color: #8B0707;
+}
+#galery #photo .gallery a img
+{
+    filter: grayscale(100%);
+    transition: all 0.4s ease;
+}
+#galery #photo .gallery a:hover img
+{
+    filter: grayscale(0%);
+}
+
+
+
+.filter a {
+    display: inline-block;
+    background-color: #8B0707;
+    color: white;
+    font-family: berlin;
+    transition: all 0.2s ease-in;
+}
+.filter a:hover {
+    display: inline-block;
+    background-color: #c90101;
+    color: white;
+    font-family: berlin;
+}
+
+.boxes {
+  display: flex;
+  flex-wrap: wrap;
+  min-height: 250px;
+}
+
+.boxes div.wadah {
+  /* width: 23%; */
+  margin: 0 1% 20px 1%;
+}
+.boxes div.wadah #link {    
+    /* height: 200px; */
+    overflow: hidden;
+    display: block;
+}
+.boxes div.wadah img
+{
+    height: 150px;
+}
+.boxes div.wadah #title
+{
+    color: #3e0000;
+    font-family: 'Segoe UI';
+    text-decoration: none;
+    text-align: center;
+    transition: all 0.5s ease;
+    font-weight: bold;
+}
+.boxes div.wadah #title:hover
+{
+    color: white;
+    background-color: #8B0707;
+}
+
+.filter a.active {
+    background-color: #ffa1a1;
+    color: black;
+}
+
+.is-animated {
+  animation: .6s rotate-right;
+}
+
+@keyframes rotate-right {
+  0% {
+    transform: transparent(-100%);
+  }
+  100% {
+    transform: none;
+  }
+}
+
+
+
+
+@media only screen and (max-device-width: 500px) {
+    #galery #title h1
+    {
+        font-size: 25px;
+    }
+    #galery #photo a img
+    {
+        filter: grayscale(0%);
+    }
+    .boxes div.wadah img
+    {
+        width: 100%;
+        height: auto;
+    }
+}
+/* END GALERY */
+
+/* WISATA_DETAIL */
+#wisata_detail #title h1
+{
+    font-family: 'Segoe UI';
+    color: #8B0707;
+}
+@media only screen and (max-device-width: 500px) {
+    #wisata_detail #title h1
+    {
+        font-size: 25px;
+    }
+}
+#wisata_detail #gallery img
+{
+    filter: grayscale(100%);
+    transition: all 0.4s ease;
+}
+#wisata_detail #gallery a:hover img
+{
+    filter: grayscale(0%);
+}
+#wisata_detail #body h2
+{
+    color: #8B0707;
+}
+#wisata_detail #body h4
+{
+    font-size: 1rem;
+    color: #8B0707;
+    font-weight: bold;
+    font-family: Calibri;
+}
+@media only screen and (max-device-width: 500px) {
+    #wisata_detail #gallery img
+    {
+        filter: grayscale(0%);
+    }
+}
+/* END WISATA DETAIL */
